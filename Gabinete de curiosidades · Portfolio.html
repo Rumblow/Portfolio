@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gabinete de curiosidades · Portfolio</title>
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Syne:wght@500;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="wobble" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence id="turb" type="fractalNoise" baseFrequency="0.012 0.02" numOctaves="2" seed="4" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="14" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<main class="wrap py-8 md:py-14">
+
+  <!-- HERO: cartel de exposición -->
+  <header class="frame poster">
+    <svg class="rings" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g transform="translate(400 300)">
+        <circle r="60"  stroke="#c2603f"/><circle r="110" stroke="#9c3b2a"/><circle r="165" stroke="#8a8a4f"/>
+        <circle r="225" stroke="#3f6fb5"/><circle r="290" stroke="#c2603f"/><circle r="360" stroke="#9c3b2a"/><circle r="440" stroke="#8a8a4f"/>
+      </g>
+    </svg>
+    <p class="ui m-0" style="color:var(--cream-dim)">Gran exposición permanente de obras, códigos y curiosidades</p>
+    <h1 class="h1 mt-6">Rum's<br>Portfolio</h1>
+    <p class="sub">Artista & desarrollador de software.</p>
+    <p class="lead">Dibujo lo que veo y programo lo que imagino. Este gabinete reúne piezas donde el pincel y el código se examinan bajo la misma lupa.</p>
+    <div class="btn-row">
+      <a class="pill solid" href="#gabinete">Recorrer el gabinete</a>
+      <a class="pill" href="#contacto">Enviar una carta</a>
+    </div>
+  </header>
+
+  <!-- GABINETE -->
+  <section id="gabinete" aria-labelledby="t-gab">
+    <div class="orn" aria-hidden="true">✦</div>
+    <h2 id="t-gab" class="h2">El gabinete</h2>
+    <p class="kicker mt-4">Seis especímenes de una misma criatura curiosa. Cada lámina describe una faceta del oficio.</p>
+
+    <div class="grid gap-6 mt-10 sm:grid-cols-2 lg:grid-cols-3">
+      <article class="plate"><div class="inner">
+        <svg viewBox="0 0 200 100" aria-hidden="true"><path class="c1" d="M20 80 C40 10 90 10 100 50 C110 90 160 90 180 20"/><path class="c2" d="M20 60 C50 30 80 30 100 50 S150 70 180 40"/><circle class="c3" cx="100" cy="50" r="6"/></svg>
+        <h3>Arte plástico</h3><div class="latin">Pictor manualis</div>
+        <p>Óleo, tinta y grabado. Series sobre flora, fauna imaginaria y la luz de la tarde.</p>
+        <div class="fig">Lámina I, técnica mixta</div>
+      </div></article>
+
+      <article class="plate"><div class="inner">
+        <svg viewBox="0 0 200 100" aria-hidden="true"><rect class="c1" x="30" y="15" width="140" height="70" rx="4"/><path class="c2" d="M55 40 L75 50 L55 60 M90 62 H125"/><circle class="c3" cx="150" cy="30" r="4"/></svg>
+        <h3>Desarrollo de software</h3><div class="latin">Codex interactivus</div>
+        <p>Aplicaciones web y herramientas creativas, escritas con la paciencia de un copista.</p>
+        <div class="fig">Lámina II, JavaScript y tinta digital</div>
+      </div></article>
+
+      <article class="plate"><div class="inner">
+        <svg viewBox="0 0 200 100" aria-hidden="true"><path class="c1" d="M100 10 C60 30 60 70 100 90 C140 70 140 30 100 10Z"/><path class="c2" d="M100 10 V90 M100 35 L78 48 M100 55 L122 68 M100 70 L82 78"/><path class="c3" d="M30 50 H70 M130 50 H170"/></svg>
+        <h3>Diseño</h3><div class="latin">Forma et ordo</div>
+        <p>Identidades, interfaces y sistemas visuales con carácter propio y mucha legibilidad.</p>
+        <div class="fig">Lámina III, grabado en seco</div>
+      </div></article>
+
+      <article class="plate"><div class="inner">
+        <svg viewBox="0 0 200 100" aria-hidden="true"><path class="c1" d="M30 20 H95 V85 H30Z M105 20 H170 V85 H105Z"/><path class="c2" d="M42 35 H83 M42 47 H83 M42 59 H72 M117 35 H158 M117 47 H158"/><path class="c3" d="M100 18 V87"/></svg>
+        <h3>Publicaciones editoriales</h3><div class="latin">Liber impressus</div>
+        <p>Maquetación de libros, fanzines y catálogos. Cuido el interlineado como un jardín.</p>
+        <div class="fig">Lámina IV, tipografía en plomo</div>
+      </div></article>
+
+      <article class="plate"><div class="inner">
+        <svg viewBox="0 0 200 100" aria-hidden="true"><circle class="c1" cx="60" cy="50" r="30"/><circle class="c2" cx="100" cy="50" r="30"/><circle class="c3" cx="140" cy="50" r="30"/><path class="c1" d="M20 50 H180" stroke-dasharray="3 5"/></svg>
+        <h3>Arte generativo</h3><div class="latin">Algorithmus pictor</div>
+        <p>Código que dibuja. Patrones, ruido y simetrías que crecen solos desde unas pocas reglas.</p>
+        <div class="fig">Lámina V, plotter y pantalla</div>
+      </div></article>
+
+      <article class="plate"><div class="inner">
+        <svg viewBox="0 0 200 100" aria-hidden="true"><path class="c1" d="M40 85 L100 15 L160 85Z"/><path class="c2" d="M70 85 L100 50 L130 85"/><circle class="c3" cx="100" cy="15" r="5"/><path class="c3" d="M20 85 H180"/></svg>
+        <h3>Ilustración científica</h3><div class="latin">Naturalia delineata</div>
+        <p>Láminas de estudio al estilo de los viejos herbarios, con rótulos y notas al margen.</p>
+        <div class="fig">Lámina VI, acuarela sobre papel</div>
+      </div></article>
+    </div>
+  </section>
+
+  <!-- MANIFIESTO -->
+  <section id="manifiesto" aria-labelledby="t-man">
+    <div class="orn" aria-hidden="true">✦</div>
+    <h2 id="t-man" class="h2 mb-8">Manifiesto</h2>
+    <div class="frame">
+      <div class="manifesto">
+        <p>Aprendí por curiosidad y por terquedad. Nadie me entregó un programa de estudios: tomé prestados libros, copié láminas de enciclopedias, rompí más de un programa y lo arreglé a las tres de la mañana. Esa es mi escuela, y nunca cerró.</p>
+        <p>Creo que el dibujo y el código comparten un mismo oficio. Ambos piden observar con atención, nombrar cada cosa con precisión y aceptar que el primer intento casi nunca es el bueno. Una línea mal trazada y una variable mal nombrada se corrigen con el mismo gesto.</p>
+        <div class="marg">Nota al margen: la lógica también puede ser bella, y la belleza también necesita estructura.</div>
+        <p>Busco que lo técnico no sea frío ni lo artístico caprichoso. Quiero interfaces que se sientan como un objeto hecho a mano, y dibujos que tengan el rigor de un buen sistema. En el cruce de esos dos mundos encuentro lo que más me interesa construir.</p>
+        <p>Si algo de lo que ves aquí te despierta una idea, escríbeme. Los mejores proyectos empiezan como una pregunta compartida.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" aria-labelledby="t-con">
+    <div class="orn" aria-hidden="true">✦</div>
+    <h2 id="t-con" class="h2">Correspondencia</h2>
+    <p class="kicker mt-4 mb-10">Elige el sello que prefieras. Respondo cada carta.</p>
+    <nav class="stamps" aria-label="Enlaces de contacto">
+      <a class="stamp" href="mailto:rumblow11@gmail.com"><b>Correo</b><span>rumblow11@gmail.com</span></a>
+      <a class="stamp" href="https://github.com/Rumblow" rel="noopener"><b>GitHub</b><span>Código abierto</span></a>
+      <a class="stamp" href="https://pin.it/23z2dKcmF" rel="noopener"><b>Pinterest</b><span>Obra visual</span></a>
+      <a class="stamp" href="https://www.linkedin.com/" rel="noopener"><b>LinkedIn</b><span>Trayectoria</span></a>
+    </nav>
+  </section>
+
+  <footer>
+    <p class="m-0">Impreso digitalmente en <span id="y"></span>. Todos los derechos reservados.</p>
+  </footer>
+</main>
+
+<script src="js/portfolio.js"></script>
+</body>
+</html>
