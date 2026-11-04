@@ -19,14 +19,59 @@
   </filter>
 </svg>
 
-<main class="wrap py-8 md:py-14">
+<main class="wrap layout py-8 md:py-14">
+
+  <aside class="side-panel contact-panel" aria-labelledby="t-side-contact">
+    <div>
+      <p class="side-eyebrow">Correspondencia</p>
+      <h2 id="t-side-contact" class="side-title">Contactos</h2>
+      <p class="side-copy">Encuéntrame y descubre mis pines y tableros.</p>
+    </div>
+    <nav class="side-links" aria-label="Contacto y redes">
+      <a href="mailto:rumblow11@gmail.com">Correo <span>Escríbeme una carta ↗</span></a>
+      <a href="https://www.pinterest.com/Rumblow_/" target="_blank" rel="noopener noreferrer">Pinterest <span>Mis pines y tableros ↗</span></a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn <span>Conectar ↗</span></a>
+    </nav>
+    <div class="pinterest-profile">
+      <a data-pin-do="embedUser" data-pin-board-width="180" data-pin-scale-height="240" data-pin-scale-width="60" href="https://www.pinterest.com/Rumblow_/"></a>
+      <a class="pinterest-fallback" href="https://www.pinterest.com/Rumblow_/" target="_blank" rel="noopener noreferrer">Ver perfil y tableros ↗</a>
+    </div>
+  </aside>
+
+  <div class="content">
+
+  <div class="theme-switcher">
+    <div class="theme-copy">
+      <label for="theme-picker">Tema de color</label>
+      <span>Paletas de alto contraste · tu elección se recuerda</span>
+    </div>
+    <span class="theme-swatch" aria-hidden="true"></span>
+    <select id="theme-picker" name="theme">
+      <option value="original">Original · terracota</option>
+      <option value="fuchsia">Fucsia eléctrico</option>
+      <option value="cobalt">Cobalto y oro</option>
+      <option value="sunset">Atardecer cítrico</option>
+      <option value="violet">Violeta neón</option>
+      <option value="charcoal">Carbón y fuego</option>
+      <option value="lagoon">Laguna turquesa</option>
+      <option value="mint">Menta y coral</option>
+      <option value="night">Noche índigo</option>
+      <option value="orchid">Orquídea ácida</option>
+      <option value="teal">Océano y coral</option>
+      <option value="rose">Rosa profundo</option>
+      <option value="amber">Ámbar y jade</option>
+      <option value="electric">Cian eléctrico</option>
+      <option value="forest">Bosque dorado</option>
+      <option value="paper">Papel y granada</option>
+    </select>
+  </div>
 
   <!-- HERO: cartel de exposición -->
   <header class="frame poster">
     <svg class="rings" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
       <g transform="translate(400 300)">
-        <circle r="60"  stroke="#c2603f"/><circle r="110" stroke="#9c3b2a"/><circle r="165" stroke="#8a8a4f"/>
-        <circle r="225" stroke="#3f6fb5"/><circle r="290" stroke="#c2603f"/><circle r="360" stroke="#9c3b2a"/><circle r="440" stroke="#8a8a4f"/>
+        <circle r="60" stroke="var(--terracota)"/><circle r="110" stroke="var(--ladrillo)"/><circle r="165" stroke="var(--oliva)"/>
+        <circle r="225" stroke="var(--cobalto)"/><circle r="290" stroke="var(--terracota)"/><circle r="360" stroke="var(--ladrillo)"/><circle r="440" stroke="var(--oliva)"/>
       </g>
     </svg>
     <p class="ui m-0" style="color:var(--cream-dim)">Gran exposición permanente de obras, códigos y curiosidades</p>
@@ -113,16 +158,55 @@
     <nav class="stamps" aria-label="Enlaces de contacto">
       <a class="stamp" href="mailto:rumblow11@gmail.com"><b>Correo</b><span>rumblow11@gmail.com</span></a>
       <a class="stamp" href="https://github.com/Rumblow" rel="noopener"><b>GitHub</b><span>Código abierto</span></a>
-      <a class="stamp" href="https://pin.it/23z2dKcmF" rel="noopener"><b>Pinterest</b><span>Obra visual</span></a>
-      <a class="stamp" href="https://www.linkedin.com/" rel="noopener"><b>LinkedIn</b><span>Trayectoria</span></a>
+      <a class="stamp" href="https://www.pinterest.com/Rumblow_/" target="_blank" rel="noopener noreferrer"><b>Pinterest</b><span>Pines y tableros</span></a>
+      <a class="stamp" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b><span>Trayectoria</span></a>
     </nav>
   </section>
 
+  <section class="pinterest-section" aria-labelledby="t-pins">
+    <div class="orn" aria-hidden="true">✦</div>
+    <h2 id="t-pins" class="h2">Pines seleccionados</h2>
+    <p class="kicker mt-4">Una pequeña colección de ideas guardadas en Pinterest.</p>
+    <div class="pinterest-pins">
+      <article class="pinterest-pin">
+        <a data-pin-do="embedPin" href="https://www.pinterest.com/pin/1050746156858942067/"></a>
+        <a class="pinterest-fallback" href="https://www.pinterest.com/pin/1050746156858942067/" target="_blank" rel="noopener noreferrer">Abrir este pin en Pinterest ↗</a>
+      </article>
+      <article class="pinterest-pin">
+        <a data-pin-do="embedPin" href="https://www.pinterest.com/pin/1050746156858942028/"></a>
+        <a class="pinterest-fallback" href="https://www.pinterest.com/pin/1050746156858942028/" target="_blank" rel="noopener noreferrer">Abrir este pin en Pinterest ↗</a>
+      </article>
+      <article class="pinterest-pin">
+        <a data-pin-do="embedPin" href="https://www.pinterest.com/pin/1050746156858763285/"></a>
+        <a class="pinterest-fallback" href="https://www.pinterest.com/pin/1050746156858763285/" target="_blank" rel="noopener noreferrer">Abrir este pin en Pinterest ↗</a>
+      </article>
+    </div>
+  </section>
+
   <footer>
-    <p class="m-0">Impreso digitalmente en <span id="y"></span>. Todos los derechos reservados.</p>
+    <p class="m-0">Hecho por Rum <span id="y"></span>. Todos los derechos reservados.</p>
   </footer>
+  </div>
+
+  <aside class="side-panel projects-panel" aria-labelledby="t-side-projects">
+    <div class="project-banner">
+      <p class="side-eyebrow">Selección de obra</p>
+      <h2 id="t-side-projects" class="side-title">Proyectos</h2>
+      <p class="side-copy">Explora mis proyectos y su código en GitHub.</p>
+    </div>
+    <nav class="project-repos" aria-label="Repositorios de proyectos en GitHub">
+      <a href="https://github.com/Rumblow/MoProSoft_Presentaci-n" target="_blank" rel="noopener noreferrer"><strong>MoProSoft · Presentación</strong><span>Juego interactivo educativo</span></a>
+      <a href="https://github.com/Rumblow/Sakura" target="_blank" rel="noopener noreferrer"><strong>Sakura</strong><span>Bots para Discord · Python</span></a>
+      <a href="https://github.com/Rumblow/Furiosa" target="_blank" rel="noopener noreferrer"><strong>Furiosa</strong><span>Videojuego 2D · Python</span></a>
+      <a href="https://github.com/Rumblow/guts_game" target="_blank" rel="noopener noreferrer"><strong>Guts Game</strong><span>Proyecto de videojuego · Python</span></a>
+      <a href="https://github.com/Rumblow/Diario-animo" target="_blank" rel="noopener noreferrer"><strong>Diario de ánimo</strong><span>Explorar repositorio ↗</span></a>
+      <a href="https://github.com/Rumblow/Ronald-Nayhit-Parra-Tabet" target="_blank" rel="noopener noreferrer"><strong>Ronald Nayhit Parra Tabet</strong><span>Explorar repositorio ↗</span></a>
+      <a href="https://github.com/Rumblow/Hoja-de-Vida" target="_blank" rel="noopener noreferrer"><strong>Hoja de vida</strong><span>Explorar repositorio ↗</span></a>
+    </nav>
+  </aside>
 </main>
 
 <script src="js/portfolio.js"></script>
+<script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
 </body>
 </html>
